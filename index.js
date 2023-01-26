@@ -54,4 +54,39 @@ function reset() {
     guestScore = 0;
 
     updateValue();
+    stopTimer();
+}
+
+//timer
+let seconds = 00;
+let minutes = 15;
+let appendSeconds = document.getElementById("seconds");
+let appendMinutes = document.getElementById("minutes");
+Interval = setInterval(tick, 1000);
+
+function stopTimer() {
+    appendMinutes.textContent = "00";
+    appendSeconds.textContent = "00";
+    clearInterval(Interval);
+}
+
+function tick() {
+    seconds--;
+
+    if (seconds <= 9){
+        appendSeconds.textContent = "0" + seconds;
+    }
+    if (seconds > 9) {
+        appendSeconds.textContent = seconds;
+    }
+    if (seconds < 1) {
+        minutes--;
+        appendMinutes.textContent = minutes;
+        seconds = 59;
+        appendSeconds.textContent = seconds;
+    }
+
+    if (seconds <= 0) {
+        stopTimer();
+    }
 }

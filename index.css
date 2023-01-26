@@ -5,15 +5,19 @@
 
 body {
     margin: 0;
+    background-color: #0C4A6E;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
-    background-color: #0C4A6E;
     padding-bottom: 20px;
     margin: 80px 40px 0 40px;
     min-height: 400px;
+    background-color: #075985;
+    border: 3px solid #F3F4F6;
+    border-radius: 5px;
+    box-shadow: 5px 5px #111827;
 }
 
 h3 {
@@ -56,4 +60,6 @@ h3 {
 #reset {
     position: fixed;
     margin-top: 390px;
+    font-family: cursedTimer;
+    color:#E11D48;
 }
