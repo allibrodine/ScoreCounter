@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: cursedTimer;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
 
 body {
     margin: 0;
@@ -13,22 +16,44 @@ body {
     min-height: 400px;
 }
 
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #F3F4F6;
+    text-align: center;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
 #scores {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 #home-score, #guest-score {
     background-color: #111827;
     min-height: 160px;
     min-width: 200px;
-    padding-top: 40px;
+    padding-top: 50px;
     color: #E11D48;
     font-size: 96px;
+    font-family: cursedTimer;
     text-align: center;
 }
 
+#btn {
+    background-color: #0C4A6E;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #F3F4F6;
+    min-height: 50px;
+    width: 32%;
+    border-color: #F3F4F6;
+    border-radius: 5px;
+    box-shadow: 3px 3px #111827;
+}
+
 #reset {
-    max-height: 30px;
     position: fixed;
     margin-top: 390px;
 }
